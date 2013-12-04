@@ -3,8 +3,8 @@ require "./pig_latin"
 
 describe PigLatin do
   describe "#pig_latin_word" do
-    it "For words that begin with consonant sounds, the initial consonant or consonant
-    cluster is moved to the end of the word, and ay is added" do
+    it "For words that begin with consonant sounds, the initial consonant or
+     consonant cluster is moved to the end of the word, and ay is added" do
       banana = PigLatin.new
       banana.word = "banana"
       banana.pig_latin_word.should eq("ananabay")
