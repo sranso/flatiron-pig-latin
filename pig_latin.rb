@@ -12,8 +12,12 @@ class PigLatin
   end
 
   def pig_latin_word
-    split_word = /(?<beginning>\A[a-zA-Z])(?<end>[aeiou]*[a-zA-Z]*)/.match(@word)
-    new_word = "#{split_word[:end]}#{split_word[:beginning]}ay"
+    split_word = /\A(?<beginning>[yY]?[^aeiouyAEIOUY]*)(?<end>[aeiouyAEIOUY]*[a-zA-Z]*)/.match(@word)
+    if split_word[:beginning] == ""
+      new_word = "#{split_word[:end]}way"
+    else
+      new_word = "#{split_word[:end]}#{split_word[:beginning]}ay"
+    end
   end
 end
 
