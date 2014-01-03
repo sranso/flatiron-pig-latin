@@ -1,5 +1,3 @@
-require "debugger"
-
 class String
   def pig_latin
     # split sentence into an array by the word breaks

@@ -1,0 +1,13 @@
+%h1 pig latin
+%h2 as fuck
+
+%form{:action=>"/", :method=>"POST"}
+  %label{:for=>"piglatin"}
+    What do you want to Pig-Latin-ize?
+    %span.muted
+      You can enter a word or a phrase. Heck, even a whole paragraph!
+  %input{:id=>"name", :type=>"text", :name=>"pig"}
+  %button.btn{:type=>"submit", :value=>"result"} Hit that
+
+- if params
+  = params["pig"].pig_latin
