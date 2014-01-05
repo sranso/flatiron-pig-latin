@@ -1,7 +1,64 @@
 body {
-  background-image: url(http://thetreegarden.files.wordpress.com/2010/10/baby-chicken-duck-on-pig.jpg);
+  /*background-image: url(http://thetreegarden.files.wordpress.com/2010/10/baby-chicken-duck-on-pig.jpg);*/
+  background-blend-mode: screen;
+  background-color: grey;
 }
 input {
   width: 80%;
   height: 400px;
+}
+.pig {
+  position: absolute;
+  right: 0;
+  background-color: rgb(255, 192, 203);
+}
+.pigclear {
+  position: absolute;
+  right: 0;
+  background-color: white;
+  /*background-color: blue;*/
+}
+.snout {
+  top: 210px;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+  border-top-color: rgba(250, 120, 140, 0.8);
+}
+.head {
+  top: 100px;
+  width: 200px;
+  height: 250px;
+  border-radius: 300px;
+  margin-right: -125px;
+}
+.pig.ear {
+  top: 60px;
+  width: 60px;
+  height: 80px;
+  border-radius: 20px;
+  margin-right: -40px;
+  /* this doesn't do what i expected it to do. see http://codepen.io/oknoblich/pen/lhxIz */
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent;
+  border-left-color: rgba(250, 120, 140, 0.8);
+}
+.pigclear.ear {
+  top: 60px;
+  width: 60px;
+  height: 70px;
+  border-radius: 40px;
+  margin-right: 11px;
+}
+.eye {
+  background-color: rgba(250, 120, 140, 0.8);
+  top: 182px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin-right: 25px;
 }
