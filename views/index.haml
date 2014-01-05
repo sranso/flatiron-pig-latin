@@ -1,7 +1,8 @@
 .container
   .pig.snout
+  .pigcover.snout
   .pig.ear
-  .pigclear.ear
+  .pigcover.ear
   .pig.head
   .pig.eye
   %form{:action=>"/", :method=>"POST"}
@@ -15,5 +16,8 @@
     %button.btn.btn-large{:type=>"submit", :value=>"result"} Ubmitsay
 
   - if params["pig"]
-    %h1
-      = params["pig"].pig_latin
+    .bubble.spout
+    .bubblecover.spout
+    .bubble.well.well-large
+      %h1
+        = params["pig"].pig_latin

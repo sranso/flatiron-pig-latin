@@ -1,10 +1,10 @@
 body {
   /*background-image: url(http://thetreegarden.files.wordpress.com/2010/10/baby-chicken-duck-on-pig.jpg);*/
   background-blend-mode: screen;
-  background-color: grey;
+  /*background-color: grey;*/
 }
 input {
-  width: 80%;
+  width: 60%;
   height: 400px;
 }
 .pig {
@@ -12,21 +12,30 @@ input {
   right: 0;
   background-color: rgb(255, 192, 203);
 }
-.pigclear {
+.pigcover {
   position: absolute;
   right: 0;
   background-color: white;
-  /*background-color: blue;*/
 }
-.snout {
-  top: 210px;
+.pig, .pigcover {
+  z-index: 1;
+}
+.pig.snout {
+  top: 200px;
   width: 100px;
-  height: 50px;
-  border-radius: 10px;
+  height: 60px;
+  border-radius: 20px;
   border-style: solid;
   border-width: 10px;
-  border-color: white;
-  border-top-color: rgba(250, 120, 140, 0.8);
+  margin-right: 18px;
+  border-color: rgb(255, 192, 203);
+}
+.pigcover.snout {
+  top: 85px;
+  width: 160px;
+  height: 140px;
+  border-radius: 140px;
+  margin-right: 48px;
 }
 .head {
   top: 100px;
@@ -47,7 +56,7 @@ input {
   border-color: transparent;
   border-left-color: rgba(250, 120, 140, 0.8);
 }
-.pigclear.ear {
+.pigcover.ear {
   top: 60px;
   width: 60px;
   height: 70px;
@@ -61,4 +70,43 @@ input {
   height: 20px;
   border-radius: 20px;
   margin-right: 25px;
+}
+.bubble, .bubblecover {
+  z-index: -1;
+}
+.bubble {
+  /*background-color: rgba(255, 255, 255, 0.4);*/
+  background-color: #ccc;
+  position: absolute;
+}
+.bubblecover {
+  /*background-color: rgba(55, 255, 45, 0.4);*/
+  background-color: white;
+  position: absolute;
+}
+.bubble.spout {
+  height: 400px;
+  width: 400px;
+  border-radius: 400px;
+  right: 60px;
+  top: 10px;
+}
+.bubblecover.spout {
+  height: 700px;
+  width: 700px;
+  border-radius: 700px;
+  right: -60px;
+  top: -320px;
+}
+.bubble.holder {
+  height: 80%;
+  width: 80%;
+  border-radius: 80%;
+  right: 200px;
+  top: 190px;
+}
+.bubble.well.well-large {
+  position: relative;
+  width: 80%;
+  border-radius: 100px;
 }
