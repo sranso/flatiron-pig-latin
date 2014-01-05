@@ -85,18 +85,31 @@ input {
   position: absolute;
 }
 .bubble.spout {
-  height: 400px;
-  width: 400px;
+  height: 700px;
+  width: 700px;
   border-radius: 400px;
-  right: 60px;
-  top: 10px;
+  right: 20px;
+  top: -270px;
 }
 .bubblecover.spout {
   height: 700px;
   width: 700px;
   border-radius: 700px;
-  right: -60px;
-  top: -320px;
+  right: -80px;
+  top: -349px;
+}
+.bubble.spout2 {
+  height: 400px;
+  width: 400px;
+  border-radius: 500px;
+  right: 210px;
+  top: 10px;
+}
+.bubblecover.spout2 {
+  height: 300px;
+  width: 600px;
+  right: 210px;
+  top: 0;
 }
 .bubble.holder {
   height: 80%;
