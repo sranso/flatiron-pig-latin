@@ -1,3 +1,6 @@
+# anchor point from pig's mouth to translated
+# share buttons
+# fix position of pig
 require 'bundler'
 Bundler.require
 
