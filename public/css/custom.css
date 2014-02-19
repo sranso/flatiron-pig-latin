@@ -65,51 +65,37 @@ input {
 }
 .eye {
   background-color: rgba(250, 120, 140, 0.8);
-  top: 182px;
+  top: 177px;
   width: 20px;
   height: 20px;
   border-radius: 20px;
-  margin-right: 25px;
+  border: 8px solid #fffcf3;
+  margin-right: 20px;
 }
 .bubble, .bubblecover {
   z-index: -1;
 }
 .bubble {
-  /*background-color: rgba(255, 255, 255, 0.4);*/
   background-color: #ccc;
   position: absolute;
 }
 .bubblecover {
-  /*background-color: rgba(55, 255, 45, 0.4);*/
   background-color: white;
   position: absolute;
 }
-.bubble.spout {
-  height: 700px;
-  width: 700px;
-  border-radius: 400px;
-  right: 20px;
-  top: -270px;
+.bubble.well.well-large::before,
+.bubble.well.well-large::after {  
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 50%;
 }
-.bubblecover.spout {
-  height: 700px;
-  width: 700px;
-  border-radius: 700px;
-  right: -80px;
-  top: -349px;
-}
-.bubble.spout2 {
-  height: 400px;
-  width: 400px;
-  border-radius: 500px;
-  right: 210px;
-  top: 10px;
-}
-.bubblecover.spout2 {
-  height: 300px;
-  width: 600px;
-  right: 210px;
-  top: 0;
+.bubble.well.well-large::before {
+  z-index: -1;
+  bottom: 0; right: -15%;
+  height: 100px;
+  width: 50%;
+  border-bottom: 45px solid #DDD;
 }
 .bubble.holder {
   height: 80%;
@@ -120,6 +106,8 @@ input {
 }
 .bubble.well.well-large {
   position: relative;
-  width: 80%;
-  border-radius: 100px;
+  width: 75%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #DDD;
 }
