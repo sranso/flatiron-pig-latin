@@ -1,5 +1,3 @@
-console.log("hi");
-
 // facebook
 (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];

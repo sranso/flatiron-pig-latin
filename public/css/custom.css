@@ -1,8 +1,3 @@
-body {
-  /*background-image: url(http://thetreegarden.files.wordpress.com/2010/10/baby-chicken-duck-on-pig.jpg);*/
-  background-blend-mode: screen;
-  /*background-color: grey;*/
-}
 input {
   width: 60%;
   height: 400px;
@@ -110,4 +105,20 @@ input {
   padding: 20px;
   border-radius: 20px;
   background-color: #DDD;
+}
+.links-div {
+  width: 100%;
+  height: 200px;
+  margin-top: 20%;
+  background-color: #009900;
+}
+.links {
+  margin-left: 38%;
+  padding-top: 2em;
+}
+.links > * {
+  padding: 0 2em;
+}
+.fb-share-button {
+  line-height: 10px;
 }

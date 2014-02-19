@@ -7,8 +7,11 @@
   %body
   .container-fluid
     =yield
-    <div class="fb-share-button" data-href="http://pig-latin-time.herokuapp.com/" data-type="button"></div>
-    
-    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://pig-latin-time.herokuapp.com/" data-text="Pig-Latin-ize your life" data-via="sranso">Tweet</a>
+
+  .links-div
+    .links
+      <div class="fb-share-button" data-href="http://pig-latin-time.herokuapp.com/" data-type="button"></div>
+      
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://pig-latin-time.herokuapp.com/" data-text="Pig-Latin-ize your life" data-via="sranso">Tweet</a>
 
   %script{:src=>"js/custom.js"}
